@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "antd": "^3.7.0",
     "autoprefixer": "7.1.6",
     "axios": "^0.18.0",
     "babel-core": "6.26.0",
@@ -104,6 +105,9 @@
     "extends": "react-app"
   },
   "devDependencies": {
-    "mobx-react-devtools": "^6.0.1"
+    "babel-plugin-import": "^1.8.0",
+    "mobx-react-devtools": "^6.0.1",
+    "node-sass": "^4.9.2",
+    "sass-loader": "^7.0.3"
   }
 }

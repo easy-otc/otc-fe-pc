@@ -1,0 +1,37 @@
+$height: 80px;
+$theme-color: #40a9ff;
+
+.otc-footer-wrap {
+	background: #001529;
+	height: $height;
+	line-height: $height;
+	min-width: 1180px;
+	.otc-footer {
+		width: 1180px;
+		margin: 0 auto;
+	}
+	.footer-left {
+		float: left;
+		p {
+			color: rgba(255,255,255,.7);
+			margin: 0;
+		}
+	}
+	.footer-right {
+		float: right;
+		a {
+			color: #fff;
+			&:hover {
+				color: $theme-color;
+			}
+			&:after {
+				content: '|';
+				color: rgba(255,255,255,.3);
+				margin: 0 10px;
+			}
+			&:last-child:after {
+				display: none;
+			}
+		}
+	}
+}

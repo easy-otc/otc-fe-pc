@@ -4,6 +4,7 @@ import { Provider } from 'mobx-react';
 
 import stores from './stores/index.js';
 
+import Container from './pages/Container';
 import Home from './pages/Home';
 import Detail from './pages/Detail';
 
@@ -13,10 +14,12 @@ const App = () => {
 	return (
 		<Provider {...stores}>
 			<Router>
-				<Switch>
-					<Route exact path='/' component={Home} />
-					<Route exact path='/detail' component={Detail} />
-				</Switch>
+				<Container>
+					<Switch>
+						<Route exact path='/' component={Home} />
+						<Route exact path='/detail' component={Detail} />
+					</Switch>
+				</Container>
 			</Router>
 		</Provider>
 	)

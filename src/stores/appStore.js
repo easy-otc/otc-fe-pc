@@ -8,7 +8,7 @@ class AppStore {
 	};
 
 	@action decrement = () => {
-		this.number += 1;
+		this.number -= 1;
 	};
 }
 

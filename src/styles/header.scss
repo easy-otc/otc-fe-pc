@@ -1,0 +1,29 @@
+.otc-header {
+	background: #001529;
+	height: 60px;
+	padding: 0 30px;
+	.header-logo {
+		display: block;
+		width: 200px;
+		height: 40px;
+		background: rgba(255,255,255,0.3);
+		margin: 10px 30px 10px 0;
+		float: left;
+	}
+	.header-navs {
+		float: left;
+		.ant-menu-item {
+			line-height: 60px;
+			color: #fff;
+		}
+	}
+	.header-login {
+		float: right;
+		line-height: 30px;
+		margin-top: 15px;
+		a {
+			font-size: 14px;
+			margin: 0 20px;
+		}
+	}
+}

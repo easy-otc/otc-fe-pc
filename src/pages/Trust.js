@@ -12,8 +12,9 @@ export default class Home extends React.Component {
 		const { number, increment, decrement } = this.props.appStore;
 		return (
 			<div>
+				首页
 				<Button type="primary" onClick={increment}>+</Button>
-				<Input value={number} style={{'width': 100}} />
+				<Input value={number}/>
 				<Button type="primary" onClick={decrement}>-</Button>
 			</div>
 		)
