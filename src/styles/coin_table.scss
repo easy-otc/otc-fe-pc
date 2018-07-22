@@ -1,0 +1,55 @@
+@import "_theme.scss";
+
+.coin-table {
+	text-align: center;
+	margin-top: 10px;
+	.td-credit {
+		span {
+			&:after {
+				content: '|';
+				color: $line-color;
+				margin: 0 5px;
+			}
+			&:last-child:after {
+				display: none;
+			}
+		}
+	}
+	.td-user {
+		// display: flex;
+		// align-items: center;
+		.td-user-img {
+			width: 45px;
+			height: 45px;
+			float: left;
+			margin-right: 8px;
+			span {
+				display: block;
+				width: 100%;
+				height: 100%;
+				border-radius: 50%;
+				overflow: hidden;
+				img {
+					width: 100%;
+					max-height: 100%;
+				}
+			}
+		}
+		.td-user-txt {
+			text-align: left;
+			h3 {
+				white-space: nowrap;
+				// max-width: 90px;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				line-height: 1;
+				margin-bottom: 5px;
+			}
+			.ant-tag {
+				// line-height: 14px;
+				// height: 16px;
+				// padding: 0 4px;
+			}
+		}
+	}
+}

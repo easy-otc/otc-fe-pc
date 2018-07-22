@@ -1,0 +1,56 @@
+@import "_theme.scss";
+
+.invite-header {
+	min-width: $width;
+	height: 342px;
+	background: url('https://www.coincola.com/static/imgs/invite/banner.jpg') no-repeat center / auto 342px;
+}
+
+.invite-content {
+	width: 920px;
+	margin: 20px auto;
+}
+
+.invite-info {
+	background: #fff;
+	padding: 20px 30px;
+	border: 1px solid $border-color;
+	margin-bottom: -1px;
+}
+
+.invite-count {
+	font-size: 18px;
+	span {
+		font-size: 24px;
+		font-weight: 700;
+		color: $theme-color;
+	}
+}
+
+.invite-link {
+	margin-top: 20px;
+	font-size: 18px;
+	input {
+		width: 620px;
+		margin-right: 15px;
+		font-size: 16px;
+	}
+	button {
+		vertical-align: 2px;
+	}
+}
+
+.invite-desc {
+	border: 1px solid $border-color;
+	background: #fff;
+	padding: 30px;
+	font-size: 16px;
+	h2 {
+		font-size: 20px;
+		font-weight: 700;
+		margin-bottom: 20px;
+	}
+	p {
+		margin: 5px 0;
+	}
+}

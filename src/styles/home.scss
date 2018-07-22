@@ -1,0 +1,263 @@
+@import "_theme.scss";
+
+/**
+ * 轮播图
+ * @type {[type]}
+ */
+$banner-height: 420px;
+.ant-carousel .slick-slide {
+	text-align: center;
+	height: $banner-height;
+	line-height: $banner-height;
+	background: #364d79;
+	overflow: hidden;
+	.slick-item {
+		display: block;
+		height: $banner-height;
+		div {
+			height: 100%;		
+			background-size: auto $banner-height;
+			background-position: 50%;
+			background-repeat: no-repeat;
+		}
+	}
+}
+
+.ant-carousel .slick-dots {
+	bottom: 20px;
+	li {
+		margin: 0 5px;
+		button {
+			height: 12px;
+			width: 12px;
+			border-radius: 12px;
+		}
+		&.slick-active button {
+			width: 30px;
+		}
+	}
+}
+
+
+/**
+ * 首页新闻
+ */
+.index-news-wrap {
+	height: 40px;
+	line-height: 40px;
+	min-width: $width;
+	.index-news {
+		width: $width;
+		margin: 0 auto;
+		text-align: center;
+		position: relative;
+	}
+	.anticon {
+		font-size: 20px;
+		color: #999;
+		vertical-align: middle;
+	}
+	.news-icon {
+		margin-right: 30px;
+	}
+	a {
+		color: $text-color;
+		&:hover {
+			color: $hover-color;
+		}
+		span {
+			color: $theme-color;
+			margin-left: 10px;
+		}
+	}
+	.news-close {
+		position: absolute;
+		right: 0;
+		top: 10px;
+		cursor: pointer;
+		display: none;
+		&:hover {
+			color: $hover-color;
+		}
+	}
+}
+
+
+/**
+ * bitcoin 网站
+ */
+.bit-icons-wrap {
+	min-width: $width;
+	height: 100px;
+	background: #fff;
+	padding: 25px 0;
+	.bit-icon {
+		display: flex;
+		width: $width;
+		height: 50px;
+		margin: 0 auto;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.bit-icon01 {
+		display: block;
+		width: 74px;
+		height: 20px;
+		background: url(../assets/bit_icon_1.png) no-repeat center;
+	}
+	.bit-icon02 {
+		display: block;
+		width: 183px;
+		height: 50px;
+		background: url(../assets/bit_icon_2.png) no-repeat center;
+	}
+	.bit-icon03 {
+		display: block;
+		width: 142px;
+		height: 22px;
+		background: url(../assets/bit_icon_3.png) no-repeat center;
+	}
+	.bit-icon04 {
+		display: block;
+		width: 183px;
+		height: 31px;
+		background: url(../assets/bit_icon_4.png) no-repeat center;
+	}
+}
+
+
+/**
+ * 首页面板
+ */
+.index-panel-wrap {
+	min-width: $width;
+	.index-panel {
+		width: $width;
+		margin: 0 auto;
+		padding: 50px 0;
+	}
+	.index-panel-title {
+		font-weight: 700;
+		font-size: 24px;
+		color: $text-color;
+		text-align: center;
+	}
+	.index-panel-des {
+		text-align: center;
+		max-width: 800px;
+		color: $light-text-color;
+		margin: 0 auto;
+		line-height: 22px;
+		margin-bottom: 30px;
+	}
+}
+
+
+/**
+ * 交易广告
+ */
+.trade-panel {
+	// background: #fff;
+}
+.trade-list {
+	width: $width;
+	display: flex;
+	justify-content: space-between;
+	.trade-item {
+		float: left;
+		width: 268px;
+		height: 335px;
+		background: #fff;
+	}
+	.trade-img {
+		width: 268px;
+		height: 131px;
+		overflow: hidden;
+		img {
+			width: 100%;
+			height: 100%;
+			transition: all 0.3s;
+			&:hover {
+				transform: scale(1.05);
+			}
+		}
+	}
+	.trade-content {
+		height: 204px;
+		padding: 20px;
+		border: 1px solid $border-color;
+		border-top: none;
+		text-align: center;
+		h3 {
+			color: #000;
+			&:after {
+				content: "";
+				display: block;
+				margin: 0 auto;
+				height: 1px;
+				width: 120px;
+				background: #bdbdbd;
+				margin-top: 6px;
+				margin-bottom: 19px;
+			}
+		}
+		p {
+			color: $light-text-color;
+			margin: 8px 0;
+			font-size: 13px;
+		}
+		a {
+			margin-top: 5px;
+			display: inline-block;
+			width: 100px;
+			border: 1px solid $theme-color;
+			color: $theme-color;
+			padding: 3px 15px;
+			line-height: 20px;
+			transition: all 0.3s;
+			&:hover {
+				background: $theme-color;
+				color: #fff;
+			}
+		}
+	}
+}
+
+
+/**
+ * 选择理由
+ */
+.reason-panel {
+	background: #fff;
+	.reason-list {
+		width: $width;
+		display: flex;
+		justify-content: space-between;
+	}
+	.reason-item {
+		width: 320px;
+		text-align: center;
+		.anticon {
+			font-size: 40px;
+			margin-bottom: 20px;
+		}
+		h3 {
+			font-weight: 700;
+			font-size: 24px;
+			color: $text-color;
+			margin-bottom: 20px;
+		}
+		p {
+			line-height: 22px;
+		}
+	}
+}
+
+
+/**
+ * app下载
+ */
+.app-panel {
+	height: 258px;
+	background: url(../assets/bt-bg.jpg) no-repeat center / auto 258px;
+}

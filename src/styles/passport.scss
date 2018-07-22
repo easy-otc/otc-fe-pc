@@ -1,0 +1,72 @@
+@import "_theme.scss";
+
+.passport-panel {
+	width: 500px;
+	padding: 30px 50px;
+	border: 1px solid $border-color;
+	background: #fff;
+	margin: 100px auto;
+	h3 {
+		font-size: 24px;
+		font-weight: 700;
+		margin-bottom: 20px;
+	}
+	.ant-steps {
+		margin-bottom: 50px;
+		margin-top: -30px;
+		width: 550px;
+		margin-left: -100px;
+	}
+	p {
+		font-size: 14px;
+		color: $light-text-color;
+		margin-bottom: 30px;
+	}
+	.ant-select {
+		width: 100%;
+		margin: 10px 0;
+	}
+	input,
+	.ant-input-group-wrapper,
+	.ant-input-affix-wrapper {
+		font-size: 16px;
+		margin: 10px 0;
+		.ant-input-affix-wrapper,
+		input {
+			margin: 0;
+		}
+	}
+	.ant-input-affix-wrapper .ant-input:not(:first-child) {
+		padding-left: 36px;
+	}
+	.ant-input-prefix .anticon {
+		font-size: 16px;
+		vertical-align: -10px;
+		color: $light-text-color;
+	}
+	.ant-checkbox-wrapper {
+		margin: 10px 0;
+		font-size: 16px;
+		color: #999;
+	}
+	button {
+		display: block;
+		width: 100%;
+		margin: 10px auto;
+	}
+	.btn-sendcode {
+		color: $theme-color;
+		cursor: pointer;
+	}
+	.qrcode {
+		width: 100px;
+	}
+	.btn-retrieve {
+		font-size: 16px;
+		float: right;
+	}
+
+	.ant-radio-group {
+		margin-bottom: 10px;
+	}
+}

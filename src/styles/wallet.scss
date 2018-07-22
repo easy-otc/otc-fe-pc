@@ -1,0 +1,103 @@
+@import "_theme.scss";
+
+.wallet-top {
+	border: 1px solid $border-color;
+	padding: 30px;
+	background: #fff;
+	margin-bottom: 30px;
+	h2 {
+		font-size: 16px;
+		span {
+			font-size: 24px;
+			color: $theme-color;
+		}
+	}
+	p {
+		font-size: 14px;
+		color: $light-text-color;
+		line-height: 24px;
+	}
+}
+
+.wallet-list {
+	background: #fff;
+	border: 1px solid $border-color;
+	.wallet-list-header,
+	.wallet-item-header {
+		height: 40px;
+		line-height: 40px;
+		> span {
+			display: block;
+			float: left;
+			> span {
+				color: $theme-color;
+			}
+		}
+	}
+	.bz {
+		width: 15%;
+		padding-left: 3%;
+	}
+	.ky {
+		width: 20%;
+	}
+	.dj {
+		width: 20%;
+	}
+	.cz {
+		width: 45%;
+		> * {
+			margin-right: 30px;
+			cursor: pointer;
+		}
+	}
+	.wallet-item-header {
+		border-top: 1px solid $border-color;
+	}
+	.wallet-list-header {
+		background: $light-bg;
+		color: $light-text-color;
+	}
+}
+
+
+.wallet-action-panel {
+	padding: 20px 30px;
+	border-top: 1px solid $border-color;
+	h3 {
+		font-size: 18px;
+		margin-bottom: 5px;
+	}
+	.wallet-action-left {
+		float: left;
+		width: 50%;
+		.code-info {
+			margin-top: 8px;
+			b {
+				font-size: 18px;
+			}
+			.anticon {
+				font-size: 18px;
+				margin: 0 8px;
+			}
+		}
+		.ant-form-item {
+			margin-bottom: 10px;
+		}
+		input {
+			display: block;
+			width: 250px;
+		}
+		.ant-btn {
+			margin-top: 10px;
+		}
+	}
+	.wallet-action-right {
+		float: left;
+		width: 50%;
+		p {
+			font-size: 14px;
+			color: $light-text-color;
+		}
+	}
+}

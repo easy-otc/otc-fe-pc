@@ -1,10 +1,9 @@
-$height: 80px;
-$theme-color: #40a9ff;
+@import "_theme.scss";
 
 .otc-footer-wrap {
 	background: #001529;
-	height: $height;
-	line-height: $height;
+	height: $bottom-height;
+	line-height: $bottom-height;
 	min-width: 1180px;
 	.otc-footer {
 		width: 1180px;
@@ -22,7 +21,7 @@ $theme-color: #40a9ff;
 		a {
 			color: #fff;
 			&:hover {
-				color: $theme-color;
+				color: $hover-color;
 			}
 			&:after {
 				content: '|';

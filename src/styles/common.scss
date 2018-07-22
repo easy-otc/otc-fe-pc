@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+@import "_theme.scss";
+
 * {
 	margin: 0;
 	padding: 0;
@@ -7,8 +9,17 @@
 
 html, body {
 	font-family: "Hiragino Sans GB", "Helvetica Neue", Helvetica, STHeiTi,"Microsoft Yahei", sans-serif; 
-	color: #333333;
-	background-color: #fff;
+	font-size: $font-size;
+	color: $text-color;
+	background-color: $light-bg;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 0;
+}
+
+ul, li, ol {
+	list-style-type: none;
 }
 
 .clearfix:after {
@@ -17,8 +28,80 @@ html, body {
 	clear: both;
 }
 
+.hide {
+	display: none!important;
+}
+
 .otc-body {
-	width: 1180px;
+	width: $width;
 	margin: 20px auto;
 	min-height: 800px;
+	min-height: calc(100vh - 180px);
+}
+
+.otc-body-fullwidth {
+	width: 100%;
+	min-width: $width;
+	min-height: 840px;
+	min-height: calc(100vh - 140px);
+}
+
+.otc-gg {
+	width: 100%;
+	height: 90px;
+	margin-bottom: 20px;
+	a {
+		display: block;
+	}
+}
+
+.otc-rightpanel {
+	width: 1000px;
+	float: right;
+	.otc-crumbs {
+		border-left: 2px solid $theme-color;
+		height: 16px;
+		margin: 10px 0;
+		line-height: 16px;
+		padding-left: 10px;
+	}
+	.otc-user-content {
+		border: 1px solid $border-color;
+		background: #fff;
+	}
+}
+
+/**
+ * 表格
+ */
+.ant-table-wrapper {
+	.ant-table-thead > tr > th,
+	.ant-table-tbody > tr > td {
+		// padding: 10px 16px;
+	}
+	border: 1px solid $border-color;
+	border-bottom: none;
+	.ant-table-thead {
+		th {
+			font-weight: 700;
+			text-align: center;
+			background: $light-bg;
+		}
+	}
+	.ant-table-tbody {
+		td {
+			text-align: center;
+			&.green {
+				color: #00a123;
+			}
+		}
+		tr:nth-child(2n+1) {
+			background: #fff;
+		}
+	}
+}
+
+.ant-pagination  {
+	margin-top: 20px;
+	text-align: center;
 }

@@ -1,7 +1,10 @@
+@import "_theme.scss";
+
 .otc-header {
-	background: #001529;
-	height: 60px;
+	background: $dark-bg;
+	height: $top-height;
 	padding: 0 30px;
+	min-width: $width;
 	.header-logo {
 		display: block;
 		width: 200px;
@@ -13,11 +16,15 @@
 	.header-navs {
 		float: left;
 		.ant-menu-item {
-			line-height: 60px;
+			line-height: $top-height;
 			color: #fff;
+			&:hover {
+				color: $hover-color;
+			}
 		}
 	}
 	.header-login {
+		display: none;
 		float: right;
 		line-height: 30px;
 		margin-top: 15px;
@@ -25,5 +32,81 @@
 			font-size: 14px;
 			margin: 0 20px;
 		}
+	}
+	.header-logined {
+		float: right;
+		.dropdown-button {
+			display: inline-block;
+			height: $top-height;
+			line-height: $top-height;
+			padding: 0 30px;
+			i {
+				&:first-child {
+					margin-right: 4px;
+				}
+				&:last-child {
+					margin-left: 2px;
+				}
+			}
+			// &:hover {
+			// 	background: #fff;
+			// }
+		}
+	}
+}
+
+.dropdown-list-wrap {
+	outline: none;
+	position: relative;
+	list-style-type: none;
+	padding: 4px 0;
+	margin: 0;
+	text-align: left;
+	background-color: #fff;
+	border-radius: 4px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+	background-clip: padding-box;
+	width: 350px;
+	.dropdown-title {
+		background-color: #f3f5f7;
+		padding: 8px 20px;
+		margin: 0;
+		border: 0;
+		color: $text-color;
+	}
+	.dropdown-list {
+		padding: 0 15px;
+	}
+	.dropdown-item {
+		overflow: hidden;
+		line-height: 26px;
+		&.dropdown-header {
+			color: $light-text-color;
+		}
+		span {
+			display: block;
+			float: left;
+		}
+		.coin-type {
+			font-size: 14px;
+			width: 20%;
+			color: $light-text-color;
+			text-align: left;
+		}
+		.usable {
+			font-size: 14px;
+			width: 40%;
+			text-align: right;
+		}
+		.frozen {
+			font-size: 14px;
+			width: 40%;
+			text-align: right;
+		}
+	}
+	.dropdown-footer {
+		margin-top: 10px;
+		padding: 10px 15px;
+		border-top: 1px solid $border-color;
 	}
 }

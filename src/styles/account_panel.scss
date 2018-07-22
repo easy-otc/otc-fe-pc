@@ -1,0 +1,54 @@
+@import "_theme.scss";
+
+.account-panel {
+	width: 350px;
+	margin: 100px auto 200px;
+	.ant-steps {
+		margin-bottom: 50px;
+		margin-top: -30px;
+		width: 550px;
+		margin-left: -100px;
+	}
+	p {
+		font-size: 14px;
+		color: $light-text-color;
+		margin-bottom: 30px;
+	}
+	.ant-input-group-wrapper,
+	.ant-input-affix-wrapper {
+		font-size: 16px;
+		margin: 10px 0;
+		.ant-input-affix-wrapper {
+			margin: 0;
+		}
+	}
+	.ant-input-affix-wrapper .ant-input:not(:first-child) {
+		padding-left: 36px;
+	}
+	.ant-input-prefix .anticon {
+		font-size: 16px;
+		vertical-align: -10px;
+		color: $light-text-color;
+	}
+	button {
+		display: block;
+		min-width: 100px;
+		margin: 10px auto;
+	}
+	.btn-sendcode {
+		color: $theme-color;
+		cursor: pointer;
+	}
+}
+.account-google {
+	margin: 60px auto;
+	width: 500px;
+	img {
+		width: 150px;
+		height: 150px;
+		margin-bottom: 5px;
+	}
+	p {
+		margin-bottom: 10px;
+	}
+}

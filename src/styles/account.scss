@@ -1,0 +1,37 @@
+@import "_theme.scss";
+
+.account-list {
+	padding: 10px 0 100px;
+	.account-item {
+		overflow: hidden;
+		padding: 20px 60px;
+	}
+	.account-icon {
+		float: left;
+		display: block;
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		border-radius: 50%;
+		background: #b8c4ce;
+		font-size: 24px;
+		color: #fff;
+		text-align: center;
+		margin-top: 4px;
+	}
+	.account-txt {
+		float: left;
+		margin-left: 25px;
+		h3 {
+			font-size: 18px;
+		}
+		p {
+			color: $light-text-color;
+		}
+	}
+	.ant-btn {
+		float: right;
+		margin-top: 8px;
+		width: 90px;
+	}
+}

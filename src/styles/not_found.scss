@@ -1,0 +1,19 @@
+@import "_theme.scss";
+
+.not-found-wrap {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	.not-found {
+		h3 {
+			font-size: 100px;
+			text-align: center;
+			line-height: 1;
+			margin-bottom: 20px;
+		}
+		a {
+			font-size: 20px;
+			margin: 0 20px;
+		}
+	}
+}
